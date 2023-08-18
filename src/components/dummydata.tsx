@@ -11,9 +11,10 @@ export const personName:personType={
 }
 type nameListType={
 id:number,
-first:string;
+first:string,
 last:string
 }
+
   export const nameList:Array<nameListType>=[
     {
       id:1,

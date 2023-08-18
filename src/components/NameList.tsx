@@ -1,8 +1,7 @@
 import React from 'react'
 import { ListProps} from './type'
 
-export const NameList = (props:ListProps) => {
-  const {name}=props
+export const NameList:React.FC<ListProps> = ({name}) => {
 
   return (
     <div>

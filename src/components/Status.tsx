@@ -2,7 +2,7 @@ import React from 'react'
 type statusProps={
   status:'loading'|'success'|'error'
 }
-export const Status = (props:statusProps) => {
+export const Status:React.FC<statusProps>= (props:statusProps) => {
   let message=""
   if(props.status==='loading'){
     message='Loading...'
