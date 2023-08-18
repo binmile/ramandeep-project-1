@@ -1,10 +1,11 @@
 import React from 'react'
 import { PersonProps } from './type'
 
-export const Person = (props:PersonProps) => {
+export const Person = ({name}:PersonProps) => {
+  const{first,last}=name
   return (
     <>
-    <h2>Welcome {props.name.first} {props.name.last}</h2>
+    <h2>Welcome {first} {last}</h2>
     </>
   )
 }

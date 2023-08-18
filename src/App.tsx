@@ -6,25 +6,10 @@ import { Oscar } from './components/Oscar';
 import {Person} from './components/Person'
 import {Status} from './components/Status'
 import{Heading} from './components/Heading'
+import {personName,nameList} from'./components/data'
+import {User} from './components/User'
+import {Counter} from './components/Counter'
 function App() {
-  const personName={
-    first:'Raman',
-    last:'Saini'
-  }
-  const nameList=[
-    {
-      first:"Bruce",
-      last:"Wayne"
-    },
-    {
-      first:'Clark',
-      last:'Kent'
-    },
-    {
-      first:'Princess',
-      last:'Diana'
-    }
-  ]
   return (
     <div className="App">
      <Greet name="vishwas" messageCount={20} isLoggedIn={false}/>
@@ -35,6 +20,8 @@ function App() {
      <Oscar>
       <Heading>Oscar goes to Lenardo Dicpario!</Heading>
      </Oscar>
+     <User/>
+     <Counter />
    
     </div>
   );

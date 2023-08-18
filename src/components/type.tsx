@@ -15,3 +15,19 @@ export interface ListProps{
         last:string
     }[]
 }
+export interface AuthUser{
+    name:string,
+    email:string
+}
+export interface countState{
+    count:number
+}
+
+interface UpdateAction{
+    type:'increment'|'decrement'
+    payload:number
+}
+interface ResetAction{
+    type:'reset'
+}
+export type CounterAction=UpdateAction|ResetAction
