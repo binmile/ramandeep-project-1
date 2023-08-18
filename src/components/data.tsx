@@ -1,8 +1,20 @@
-export const personName={
+import { Persontype } from "./type"
+
+type personType={
+  first:string,
+  last:string
+}
+export const personName:personType={
     first:'Raman',
-    last:'Saini'
-  }
-  export const nameList=[
+    last:'Saini',
+  
+}
+type nameListType={
+id:number,
+first:string;
+last:string
+}
+  export const nameList:Array<nameListType>=[
     {
       id:1,
       first:"Bruce",

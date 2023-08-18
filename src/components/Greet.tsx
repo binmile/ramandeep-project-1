@@ -3,9 +3,7 @@ import React from 'react'
 //     name:string
 // } 
 import { GreetProps } from './type'
-export const Greet=(props:GreetProps)=> {
-  const {name}=props;
-const {messageCount=0}=props
+export const Greet=({name,messageCount=0}:GreetProps)=> {
   return (
     <>
       <h2>Welcome {name}! you have {messageCount} unread messages . </h2>
