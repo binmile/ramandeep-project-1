@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
-import { AuthUser } from './type'
-export const User = () => {
+import { AuthUser } from '../type'
+export const User:React.FC = () => {
     const [user,setUser]=useState<AuthUser|null>(null)
     const handleLogin=()=>{
         setUser({

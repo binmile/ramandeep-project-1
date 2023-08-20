@@ -1,5 +1,5 @@
 import React from 'react'
-import { ListProps} from './type'
+import { ListProps} from '../type'
 
 export const NameList:React.FC<ListProps> = ({name}) => {
 

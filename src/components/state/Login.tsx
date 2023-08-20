@@ -1,7 +1,7 @@
 import React from 'react'
 import{useState} from 'react'
-const Login = () => {
-    const [isLoggedIn,setLoggedIn]=useState(false)
+const Login :React.FC= () => {
+    const [isLoggedIn,setLoggedIn]=useState<boolean>(false)
     const handleLogin=()=>{
         setLoggedIn(true)
     }

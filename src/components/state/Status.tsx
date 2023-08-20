@@ -2,15 +2,15 @@ import React from 'react'
 type statusProps={
   status:'loading'|'success'|'error'
 }
-export const Status:React.FC<statusProps>= (props:statusProps) => {
+export const Status:React.FC<statusProps>= ({status}) => {
   let message=""
-  if(props.status==='loading'){
+  if(status==='loading'){
     message='Loading...'
   }
-  else if(props.status==='success'){
+  else if(status==='success'){
     message="Data fetched successfully"
   }
-  else if(props.status==='error'){
+  else if(status==='error'){
     message="Error fetching data"
   }
   return (

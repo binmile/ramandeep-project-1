@@ -1,30 +1,30 @@
-
+import{BrowserRouter,Routes,Route} from "react-router-dom"
 import './App.css';
-import { Greet } from './components/Greet'
-import { NameList } from './components/NameList';
-import { Oscar } from './components/Oscar';
-import { Person } from './components/Person'
-import { Status } from './components/Status'
-import { Heading } from './components/Heading'
-import { personName, nameList } from './components/dummydata'
-import { User } from './components/User'
-import { Counter } from './components/Counter'
-function App() {
+import {Home} from './components/Router/Home'
+import {About} from './components/Router/About'
+import {Contact} from './components/Router/Contact'
+import { AllComponents } from "./AllComponents";
+import { MainHeader } from "./components/Router/MainHeader";
+const App:React.FC =()=>{
   return (
-    <div className="App">
-      <Greet name="vishwas" messageCount={20} isLoggedIn={false} />
-      <Person name={personName} />
-      <NameList name={nameList} />
-      <Status status="loading" />
-      <Heading>Placeholder text</Heading>
-      <Oscar>
-        <Heading>Oscar goes to Lenardo Dicpario!</Heading>
-      </Oscar>
-      <User />
-      <Counter />
 
+    <div className="App">
+      <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<MainHeader/>}>
+        <Route path="/home" element={<Home/>}/>
+        <Route path="/about" element={<About/>}/>
+        <Route path="/contact" element={<Contact/>}/>
+        <Route path='/practice' element={<AllComponents/>}/>
+        </Route>
+      </Routes>
+      </BrowserRouter>
+    
     </div>
-  );
+
+   
+
+    );
 }
 
 export default App;

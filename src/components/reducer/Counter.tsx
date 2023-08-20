@@ -1,7 +1,7 @@
 import React,{useReducer} from 'react'
-import { countState,CounterAction } from './type'
+import { countState,CounterAction } from '../type'
 const initialState={count:0}
-function reducer(state:countState,action:CounterAction){
+function reducer(state:countState,action:CounterAction):countState{
     switch(action.type){
         case 'increment':
             return {count:state.count+action.payload}
@@ -13,7 +13,7 @@ function reducer(state:countState,action:CounterAction){
             return state
     }
 }
-export const Counter = () => {
+export const Counter:React.FC = () => {
     const[state,dispatch]=useReducer(reducer,initialState)
   return (
     <>

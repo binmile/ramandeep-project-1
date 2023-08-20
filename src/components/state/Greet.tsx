@@ -3,7 +3,7 @@ import React from 'react'
 //     name:string
 // } 
 
-import {GreetProps} from './type'
+import {GreetProps} from '../type'
 export const Greet:React.FC<GreetProps>=({name,messageCount=0})=> {
   return (
     <>

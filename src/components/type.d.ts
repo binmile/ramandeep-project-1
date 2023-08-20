@@ -4,10 +4,10 @@ export interface GreetProps{
     isLoggedIn:boolean
 }
 export interface Persontype{
-   name:{
+
         first:string
         last:string
-   }
+
 
 }
 export interface ListProps{
@@ -31,4 +31,19 @@ interface UpdateAction{
 interface ResetAction{
     type:'reset'
 }
+
 export type CounterAction=UpdateAction|ResetAction
+
+export type createContextType={
+    children:React.ReactNode
+}
+ 
+export type CompAType={
+    name:string,
+    email:string
+}
+export interface FormType{
+    fname:string,
+    email:string,
+    phone:string
+}
