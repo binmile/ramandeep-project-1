@@ -2,7 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 export const NavBar:React.FC = () => {
   return (
-    <div>
+    <>
           <header>
         <a href="#">Logo</a>
         <nav>
@@ -11,12 +11,13 @@ export const NavBar:React.FC = () => {
                 <li> <NavLink to="/about">About</NavLink></li>
                 <li> <NavLink to="/contact">Contact</NavLink></li>
                 <li> <NavLink to="/practice">Practice</NavLink></li>
+                <li> <NavLink to="/components">Components</NavLink></li>
 
 
             </ul>
         </nav>
       </header>
-    </div>
+    </>
   )
 }
 

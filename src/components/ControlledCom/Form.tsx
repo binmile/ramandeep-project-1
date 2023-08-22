@@ -19,13 +19,13 @@ const{name,value}=e.target;
         e.preventDefault()
     }
   return (
-    <div>
+    <>
       <h1>Hello {fullName.fname} {fullName.phone} {fullName.email} </h1>
       <input type="text" placeholder='Enter your name' onChange={inputEvent} name="name" value={fullName.fname}/>
       <input type="text" placeholder='Enter your phone number' onChange={inputEvent} name="phone" value={fullName.email}/>
       <input type="text" placeholder='Enter your name' onChange={inputEvent} name="email" value={fullName.phone}/>
 
       <button onClick={onSubmit}>Click</button>
-    </div>
+    </>
   )
 }

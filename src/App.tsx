@@ -5,6 +5,7 @@ import {About} from './components/Router/About'
 import {Contact} from './components/Router/Contact'
 import { AllComponents } from "./AllComponents";
 import { MainHeader } from "./components/Router/MainHeader";
+import {Comp} from "./Comp"
 const App:React.FC =()=>{
   return (
 
@@ -16,6 +17,7 @@ const App:React.FC =()=>{
         <Route path="/about" element={<About/>}/>
         <Route path="/contact" element={<Contact/>}/>
         <Route path='/practice' element={<AllComponents/>}/>
+        <Route path='/components' element={ <Comp/> }/>
         </Route>
       </Routes>
       </BrowserRouter>

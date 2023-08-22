@@ -7,11 +7,11 @@ export const Increment:React.FC = () => {
         alert("clicked");
     },[])
   return (
-    <div>
+    <>
       <button onClick ={()=>setNum(num+1)}> click : {num}</button>
       <button onClick ={()=>setNums(nums+1)}> click : {nums}</button>
 
-    </div>
+    </>
   )
 }
 

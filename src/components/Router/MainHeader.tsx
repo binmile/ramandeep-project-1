@@ -4,10 +4,10 @@ import { Outlet } from 'react-router-dom'
 
 export const MainHeader:React.FC  = () => {
   return (
-    <div>
+    <>
       <NavBar/>
       <Outlet/>
-    </div>
+    </>
   )
 }
 

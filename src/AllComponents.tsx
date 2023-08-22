@@ -16,6 +16,8 @@ import { CompB } from './components/context/CompB';
 import { UseRef } from './components/UnControlled/UseRef';
 import {Increment} from './components/UseEffect/Increment'
 import {Form} from './components/ControlledCom/Form'
+import {LifeCycleA} from './components/lifecycle/LifeCycleA'
+import ParentComp from './components/PureComponent/ParentComp';
 export const AllComponents:React.FC  = () => {
   return (
     <div>
@@ -40,6 +42,12 @@ export const AllComponents:React.FC  = () => {
 <Increment/>
 {/*  Controlled Components */}
     <Form/>
+
+   {/* class LifeCycle */}
+   <LifeCycleA/>
+
+   {/* pure Component */}
+   <ParentComp name=''/>
     </div>
   )
 }

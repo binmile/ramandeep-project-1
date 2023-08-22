@@ -34,7 +34,7 @@ interface ResetAction{
 
 export type CounterAction=UpdateAction|ResetAction
 
-export type createContextType={
+export interface createContextType {
     children:React.ReactNode
 }
  
@@ -47,3 +47,22 @@ export interface FormType{
     email:string,
     phone:string
 }
+export interface Props{
+} 
+export interface State{
+    name:string
+}
+export interface p{
+    name:string
+}
+export interface CallBackType{
+    children:string
+}
+export interface ButtonProps extends CallBackType{
+    handleClick: () => void;
+}
+export interface CountType{
+    text:string
+    count:number
+}
+
