@@ -1,11 +1,11 @@
 import React from 'react'
-type HeadingProps={
-  children:string
+type HeadingProps = {
+  children: string
 }
-export const Heading:React.FC<HeadingProps> = (props) => {
+export const Heading: React.FC<HeadingProps> = (props) => {
   return (
     <div>
-        <h2>{props.children}</h2>
+      <h2>{props.children}</h2>
     </div>
   )
 }

@@ -3,8 +3,8 @@ import React from 'react'
 //     name:string
 // } 
 
-import {GreetProps} from '../type'
-export const Greet:React.FC<GreetProps>=({name,messageCount=0})=> {
+import { GreetProps } from '../type'
+export const Greet: React.FC<GreetProps> = ({ name, messageCount = 0 }) => {
   return (
     <>
       <h2>Welcome {name}! you have {messageCount} unread messages . </h2>

@@ -1,11 +1,11 @@
-import React,{useContext} from 'react'
+import React, { useContext } from 'react'
 import { themeCon } from './ThemeContext'
 
 export const Box = () => {
-    const theme=useContext(themeCon)
+  const theme = useContext(themeCon)
   return (
     <>
-      <p style={{backgroundColor:theme.primary.main,color:theme.primary.text}}>theme context</p>
+      <p style={{ backgroundColor: theme.primary.main, color: theme.primary.text }}>theme context</p>
     </>
   )
 }
