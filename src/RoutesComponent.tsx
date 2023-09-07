@@ -24,7 +24,10 @@ import AllStates from "./components/state/AllStates";
 import { UseRef } from "./components/UnControlled/UseRef";
 import Counts from "./components/UseMemo/Counts";
 import { Increment } from "./components/UseEffect/Increment";
+import ComponentA from "./components/useReducerwithuseContext/ComponentA"
 import Nav from "./components/Router/Nav"
+import FetchingDatabyUseState from "./components/FetchingdatauseState/FetchingDatabyUseState";
+import FetchingByUseReducer from "./components/Fetchingusereducer/FetchingByUseReducer";
 const RoutesComponent = () => {
   const LazyContact = React.lazy(() => import("./components/Router/Contact"))
 
@@ -43,6 +46,9 @@ const RoutesComponent = () => {
         <Route path="uncontrolled" element={<UseRef />} />
         <Route path="usememo" element={<Counts />} />
         <Route path="useEffect" element={<Increment />} />
+        <Route path="reducerwithContext" element={<ComponentA/>} />
+        <Route path="jsonByuseState" element={<FetchingDatabyUseState/>} />
+        <Route path="jsonByuseReducer" element={<FetchingByUseReducer/>} />
 
 
 

@@ -25,6 +25,10 @@ export const NavBar: React.FC = () => {
             <li> <NavLink style={navLinkStyles} to="usememo">useMemo</NavLink></li>
             <li> <NavLink style={navLinkStyles} to="useEffect">useEffect</NavLink></li>
             <li> <NavLink style={navLinkStyles} to="routes">routes and nested routes</NavLink></li>
+            <li> <NavLink style={navLinkStyles} to="reducerwithContext">reducerwithContext</NavLink></li>
+            <li> <NavLink style={navLinkStyles} to="jsonByuseState">Json By useState </NavLink></li>
+            <li> <NavLink style={navLinkStyles} to="jsonByuseReducer">Json By useReducer </NavLink></li>
+
           </ul>
         </nav>
       </header>

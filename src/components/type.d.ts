@@ -21,11 +21,14 @@ export interface AuthUser {
     email: string
 }
 export interface countState {
-    count: number
+    count: number,
+    count2:number
 }
-
+export type countState2={
+    state:number
+}
 interface UpdateAction {
-    type: 'increment' | 'decrement'
+    type: 'increment' | 'decrement'| 'increment2' | 'decrement2'
     payload: number
 }
 interface ResetAction {
@@ -65,4 +68,21 @@ export interface CountType {
     text: string
     count: number
 }
+export interface ReducerContextType{
+    countState:number,
+    countDispatch:React.Dispatch<CounterAction>
+} 
+export interface loaderType{
+title:string
+}
+export type stateuseReducer={
+    loader:boolean,
+    post:Record<string,string>,
+    error:string
+}
+export type actionUseReducer={
+    type:string ,
+    payload?:Record<string,string>
+} 
+
 
